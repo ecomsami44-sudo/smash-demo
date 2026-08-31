@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logo CINDER">
   <defs>
     <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff5a1f"/>
-      <stop offset="100%" stop-color="#f2a93b"/>
+      <stop offset="0%" stop-color="#ff6a2c"/>
+      <stop offset="100%" stop-color="#ffb648"/>
     </linearGradient>
   </defs>
-  <rect x="1" y="1" width="62" height="62" rx="18" fill="#0d0b0a" stroke="url(#logoGradient)" stroke-width="1.6"/>
+  <rect x="1" y="1" width="62" height="62" rx="18" fill="#1a0f09" stroke="url(#logoGradient)" stroke-width="1.6"/>
   <path d="M40.5 16.5c-6.8 3-13.6 8.6-13.6 17 0 6.9 5.2 12 11.9 12 6.4 0 11.4-4.7 11.4-11 0-4.3-2.2-7-4.3-9.3.2 2.6-.8 4.6-2.3 5.7-.2-3.9-1.4-8.6-3.1-14.4z" fill="url(#logoGradient)"/>
-  <path d="M25 40.2c0 4.2 3.3 7.4 7.4 7.4s7.6-2.9 7.6-7.1c0-2.1-.9-3.6-1.8-4.8-.6 3.6-3 5.7-5.9 5.7-2.6 0-4.9-1.8-5.6-4.3-1 .9-1.7 2.1-1.7 3.1z" fill="#0d0b0a" opacity="0.35"/>
+  <path d="M25 40.2c0 4.2 3.3 7.4 7.4 7.4s7.6-2.9 7.6-7.1c0-2.1-.9-3.6-1.8-4.8-.6 3.6-3 5.7-5.9 5.7-2.6 0-4.9-1.8-5.6-4.3-1 .9-1.7 2.1-1.7 3.1z" fill="#1a0f09" opacity="0.35"/>
 </svg>
