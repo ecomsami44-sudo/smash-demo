@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CINDER — Smash Burger Co. | Écrasé. Grillé. Inoubliable.</title>
+<meta name="description" content="CINDER, smash burger co. Des burgers écrasés minute sur plancha brûlante, un pain briché toasté au beurre et des sauces maison. Commande en ligne.">
+
+<!-- Site de démonstration — marque fictive créée pour un projet de portfolio -->
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/logo-mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+
+<!-- =================== NAVBAR =================== -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#accueil" class="navbar__logo" aria-label="CINDER — Accueil">
+      <img src="assets/icons/logo-mark.svg" alt="" class="navbar__logo-mark" width="36" height="36">
+      <span class="navbar__logo-text">CINDER<span class="navbar__logo-sub">Smash Burger Co.</span></span>
+    </a>
+
+    <nav class="navbar__nav" id="navbar-nav" aria-label="Navigation principale">
+      <a href="#menu" class="navbar__link">La Carte</a>
+      <a href="#univers" class="navbar__link">L'Univers</a>
+      <a href="#qualite" class="navbar__link">La Qualité</a>
+      <a href="#contact" class="navbar__link">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#commander" class="btn btn--primary btn--sm">
+        <span>Commander</span>
+      </a>
+      <button class="navbar__burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navbar-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu-principal">
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="accueil">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__ember hero__ember--1"></div>
+      <div class="hero__ember hero__ember--2"></div>
+      <div class="hero__ember hero__ember--3"></div>
+      <div class="hero__ember hero__ember--4"></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content" data-reveal>
+        <p class="kicker"><span class="kicker__dot"></span>Smash Burger Co. — Fondée en 2021</p>
+        <h1 class="hero__title">
+          LE SMASH BURGER<br>
+          N'A JAMAIS ÉTÉ<br>
+          <span class="text-accent">AUSSI BRUTAL.</span>
+        </h1>
+        <p class="hero__slogan">Écrasé. Grillé. Inoubliable.</p>
+        <p class="hero__text">
+          Chez CINDER, chaque steak est écrasé à la commande sur une plancha
+          brûlante à 280°C. Croûte caramélisée, pain briché toasté au beurre,
+          sauces maison. Pas de triche, pas de compromis — juste du goût à l'état brut.
+        </p>
+        <div class="hero__actions">
+          <a href="#commander" class="btn btn--primary btn--lg">
+            <span>Commander maintenant</span>
+            <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#menu" class="btn btn--ghost btn--lg">
+            <span>Découvrir la carte</span>
+          </a>
+        </div>
+
+        <ul class="hero__badges">
+          <li><span class="hero__badges-num">280°C</span>Plancha rugissante</li>
+          <li><span class="hero__badges-num">100%</span>Smashé à la commande</li>
+          <li><span class="hero__badges-num">15 min</span>Chrono cuisine</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" data-reveal data-reveal-delay="150">
+        <div class="hero__visual-ring"></div>
+        <img src="assets/images/placeholders/hero-burger.svg" alt="Visuel du burger signature CINDER (placeholder à remplacer)" class="hero__visual-img" width="1000" height="1000">
+        <div class="hero__tag hero__tag--top">SIGNATURE</div>
+        <div class="hero__tag hero__tag--bottom">9,90&nbsp;€</div>
+      </div>
+    </div>
+
+    <a href="#menu" class="hero__scroll" aria-label="Défiler vers la carte">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- =================== MARQUEE =================== -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>SMASHÉ MINUTE</span><span class="marquee__sep">✷</span>
+      <span>PAIN BRIOCHÉ MAISON</span><span class="marquee__sep">✷</span>
+      <span>PLANCHA 280°C</span><span class="marquee__sep">✷</span>
+      <span>SAUCES SECRÈTES</span><span class="marquee__sep">✷</span>
+      <span>SANS CHICHI</span><span class="marquee__sep">✷</span>
+      <span>SMASHÉ MINUTE</span><span class="marquee__sep">✷</span>
+      <span>PAIN BRIOCHÉ MAISON</span><span class="marquee__sep">✷</span>
+      <span>PLANCHA 280°C</span><span class="marquee__sep">✷</span>
+      <span>SAUCES SECRÈTES</span><span class="marquee__sep">✷</span>
+      <span>SANS CHICHI</span><span class="marquee__sep">✷</span>
+    </div>
+  </div>
+
+  <!-- =================== MENU =================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="kicker kicker--center"><span class="kicker__dot"></span>La Carte</p>
+        <h2 class="section-title">Ce qu'on sait faire</h2>
+        <p class="section-lead">Quatre familles de produits, une seule obsession : le goût brut, sans détour.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Catégories de la carte" data-reveal>
+        <button class="menu-tabs__btn is-active" role="tab" aria-selected="true" data-filter="burgers">Burgers</button>
+        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="sides">Sides</button>
+        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="desserts">Cookies &amp; Desserts</button>
+        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="extras">Extras</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- BURGERS -->
+        <article class="menu-card" data-category="burgers" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-burger-classic.svg" alt="Le Classique (placeholder à remplacer)" loading="lazy" width="600" height="600">
+            <span class="menu-card__flag">Signature</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Le Classique</h3>
+              <span class="menu-card__price">9,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Steak smashé, cheddar affiné, oignons caramélisés, sauce Cinder, pickles maison.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="burgers" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-burger-cheese.svg" alt="Cheese Smash (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Cheese Smash</h3>
+              <span class="menu-card__price">11,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Double cheddar fondu, double steak smashé, sauce moutarde &amp; miel.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="burgers" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-burger-bacon.svg" alt="Bacon Inferno (placeholder à remplacer)" loading="lazy" width="600" height="600">
+            <span class="menu-card__flag menu-card__flag--best">Best-seller</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Bacon Inferno</h3>
+              <span class="menu-card__price">12,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Bacon fumé croustillant, cheddar, oignons frits, sauce BBQ fumée.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="burgers" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-burger-double.svg" alt="Double Cinder (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Double Cinder</h3>
+              <span class="menu-card__price">13,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Deux steaks smashés, triple cheddar, sauce secrète, pickles, oignons rouges.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="burgers" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-burger-spicy.svg" alt="Ghost Pepper (placeholder à remplacer)" loading="lazy" width="600" height="600">
+            <span class="menu-card__flag menu-card__flag--spicy">Piquant</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Ghost Pepper</h3>
+              <span class="menu-card__price">12,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Steak smashé, jalapeños, cheddar, sauce piment fantôme, coriandre.</p>
+          </div>
+        </article>
+
+        <!-- SIDES -->
+        <article class="menu-card" data-category="sides" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-side-fries.svg" alt="Frites maison (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Frites Maison</h3>
+              <span class="menu-card__price">4,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Coupe fraîche, double cuisson, sel de Guérande.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="sides" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-side-onion-rings.svg" alt="Onion rings (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Onion Rings</h3>
+              <span class="menu-card__price">5,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Panure croustillante, cœur fondant, sauce chipotle.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="sides" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-side-cheese-fries.svg" alt="Cheese fries (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Cheese Fries</h3>
+              <span class="menu-card__price">6,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Frites maison, cheddar fondu, bacon émietté.</p>
+          </div>
+        </article>
+
+        <!-- DESSERTS -->
+        <article class="menu-card" data-category="desserts" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-dessert-cookie.svg" alt="Cookie fondant (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Cookie Fondant</h3>
+              <span class="menu-card__price">3,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Chocolat noir, cœur coulant, fleur de sel.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="desserts" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-dessert-brownie.svg" alt="Brownie brûlot (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Brownie Brûlot</h3>
+              <span class="menu-card__price">4,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Noix de pécan torréfiées, caramel au beurre salé.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="desserts" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-dessert-milkshake.svg" alt="Milkshake Cinder (placeholder à remplacer)" loading="lazy" width="600" height="600">
+            <span class="menu-card__flag">Nouveau</span>
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Milkshake Cinder</h3>
+              <span class="menu-card__price">6,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Vanille bourbon, chantilly maison, éclats de cookie.</p>
+          </div>
+        </article>
+
+        <!-- EXTRAS -->
+        <article class="menu-card" data-category="extras" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-extra-sauce.svg" alt="Sauce Cinder (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Sauce Cinder (pot)</h3>
+              <span class="menu-card__price">1,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Notre recette signature, fumée et légèrement épicée.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="extras" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-extra-drink.svg" alt="Boisson artisanale (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Boisson Artisanale</h3>
+              <span class="menu-card__price">3,50&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Sodas et limonades artisanales, sélection du moment.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="extras" data-reveal>
+          <div class="menu-card__media">
+            <img src="assets/images/placeholders/menu-extra-topping.svg" alt="Supplément topping (placeholder à remplacer)" loading="lazy" width="600" height="600">
+          </div>
+          <div class="menu-card__body">
+            <div class="menu-card__row">
+              <h3 class="menu-card__title">Supplément Topping</h3>
+              <span class="menu-card__price">1,90&nbsp;€</span>
+            </div>
+            <p class="menu-card__desc">Bacon, œuf, cheddar ou oignons frits en plus.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== UNIVERS =================== -->
+  <section class="story" id="univers">
+    <div class="container story__inner">
+      <div class="story__visual" data-reveal>
+        <img src="assets/images/placeholders/story-kitchen.svg" alt="Cuisine ouverte CINDER (placeholder à remplacer)" class="story__img story__img--back" loading="lazy" width="800" height="1000">
+        <img src="assets/images/placeholders/story-plancha.svg" alt="Plancha en action (placeholder à remplacer)" class="story__img story__img--front" loading="lazy" width="800" height="1000">
+        <div class="story__stat">
+          <span class="story__stat-num">280°C</span>
+          <span class="story__stat-label">Température de la plancha</span>
+        </div>
+      </div>
+
+      <div class="story__content" data-reveal data-reveal-delay="150">
+        <p class="kicker"><span class="kicker__dot"></span>L'Univers Cinder</p>
+        <h2 class="section-title">Né dans les braises<br>d'une obsession.</h2>
+        <p class="story__text">
+          Tout commence en 2021, dans un local de dix mètres carrés, avec une
+          plancha, un rêve un peu fou et une conviction : le smash burger
+          mérite mieux que la vitesse. Il mérite de l'obsession.
+        </p>
+        <p class="story__text">
+          Chez CINDER, on écrase le steak à la main, au moment de la
+          commande, pour saisir chaque fibre et caraméliser chaque bord. Le
+          pain est toasté au beurre jusqu'à la croûte dorée. Les sauces sont
+          préparées chaque matin, sans recette copiée. C'est une philosophie
+          de street food premium : rapide, brut, mais jamais bâclé.
+        </p>
+        <div class="story__stats">
+          <div class="story__stat-card">
+            <span class="story__stat-card-num">2021</span>
+            <span class="story__stat-card-label">Première plancha allumée</span>
+          </div>
+          <div class="story__stat-card">
+            <span class="story__stat-card-num">40k+</span>
+            <span class="story__stat-card-label">Burgers smashés chaque année</span>
+          </div>
+          <div class="story__stat-card">
+            <span class="story__stat-card-num">4.9/5</span>
+            <span class="story__stat-card-label">Note moyenne clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== QUALITÉ =================== -->
+  <section class="quality" id="qualite">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="kicker kicker--center"><span class="kicker__dot"></span>La Différence</p>
+        <h2 class="section-title">On ne triche jamais<br>sur le goût.</h2>
+      </div>
+
+      <div class="quality-grid">
+        <div class="quality-card" data-reveal>
+          <div class="quality-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12.5 2.5c-4.6 3.4-7.5 7.5-7.5 12A7 7 0 0012 21.5a7 7 0 007-7c0-2.6-1.3-4.5-2.5-6 .1 1.7-.5 3-1.5 3.6-.4-3-1.6-6.6-2.5-9.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="quality-card__title">Smashé minute</h3>
+          <p class="quality-card__desc">Chaque steak est écrasé à la commande sur plancha brûlante pour une croûte caramélisée irrésistible.</p>
+        </div>
+
+        <div class="quality-card" data-reveal data-reveal-delay="80">
+          <div class="quality-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12c0-4 4-8 9-8s9 4 9 8-4 8-9 8-9-4-9-8z" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 4v16" stroke="currentColor" stroke-width="1.4" opacity="0.5"/></svg>
+          </div>
+          <h3 class="quality-card__title">Pain briché maison</h3>
+          <p class="quality-card__desc">Toasté au beurre jusqu'à la croûte dorée, moelleux à l'intérieur, il tient tête au smash le plus généreux.</p>
+        </div>
+
+        <div class="quality-card" data-reveal data-reveal-delay="160">
+          <div class="quality-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="13" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M9 15a3 3 0 006 0" stroke="currentColor" stroke-width="1.6"/><path d="M12 15v6" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 class="quality-card__title">Plancha à 280°C</h3>
+          <p class="quality-card__desc">Une chaleur extrême pour saisir la viande en quelques secondes et sceller tous les jus à l'intérieur.</p>
+        </div>
+
+        <div class="quality-card" data-reveal data-reveal-delay="240">
+          <div class="quality-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="quality-card__title">Sauces signature</h3>
+          <p class="quality-card__desc">Préparées chaque matin en cuisine, sans recette copiée — c'est ce qui rend chaque bouchée reconnaissable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CTA =================== -->
+  <section class="cta" id="commander">
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container cta__inner" data-reveal>
+      <h2 class="cta__title">UNE FAIM<br><span class="text-accent">DE BRAISES&nbsp;?</span></h2>
+      <p class="cta__text">Commande en ligne et récupère ton smash brûlant en 15 minutes chrono.</p>
+      <button class="btn btn--primary btn--xl" id="orderBtn" type="button">
+        <span>Commander maintenant</span>
+        <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="cta__note">Démo — aucune commande réelle n'est envoyée sur ce site.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="footer" id="contact">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#accueil" class="navbar__logo">
+        <img src="assets/icons/logo-mark.svg" alt="" class="navbar__logo-mark" width="36" height="36">
+        <span class="navbar__logo-text">CINDER<span class="navbar__logo-sub">Smash Burger Co.</span></span>
+      </a>
+      <p class="footer__tagline">Écrasé. Grillé. Inoubliable.<br>Le smash burger premium, sans chichi.</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3v11.5a3.5 3.5 0 11-3-3.46" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 3c.4 2.4 2.1 4.2 4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#" class="footer__social" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.5V5H14c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6H14v-6h2.3l.7-3h-3V9c0-.3.2-.5.5-.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__heading">Navigation</h4>
+      <a href="#menu">La Carte</a>
+      <a href="#univers">L'Univers</a>
+      <a href="#qualite">La Qualité</a>
+      <a href="#commander">Commander</a>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__heading">Nous trouver</h4>
+      <p>12 rue des Braises<br>75011 Paris</p>
+      <p>Tous les jours, 11h30 – 22h30</p>
+      <a href="#">contact@cinder-burger.fr</a>
+    </div>
+
+    <div class="footer__col footer__col--newsletter">
+      <h4 class="footer__heading">La newsletter qui pique</h4>
+      <p>Nouveautés, offres et éditions limitées, une fois par mois.</p>
+      <form class="footer__form" id="newsletterForm">
+        <label class="visually-hidden" for="newsletterEmail">Adresse e-mail</label>
+        <input type="email" id="newsletterEmail" placeholder="ton@email.fr" required>
+        <button type="submit" aria-label="S'inscrire">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="footer__form-note" id="newsletterNote" role="status"></p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <p>© 2026 CINDER Smash Burger Co. — Marque fictive créée à des fins de démonstration.</p>
+      <div class="footer__legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
