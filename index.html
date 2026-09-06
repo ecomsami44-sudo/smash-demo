@@ -1,522 +1,428 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CINDER — Smash Burger Co. | Écrasé. Grillé. Inoubliable.</title>
-<meta name="description" content="CINDER, smash burger co. Des burgers écrasés minute sur plancha brûlante, un pain briché toasté au beurre et des sauces maison. Commande en ligne.">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="KIMBO — Café & Restaurant à l'Arribat Center, Rabat. Crêpes, gaufres, cafés, milkshakes, jus, sandwichs et desserts. Coffee. Food. Good moments." />
+  <title>KIMBO | Café &amp; Restaurant — Rabat</title>
 
-<!-- Site de démonstration — marque fictive créée pour un projet de portfolio -->
+  <!-- Google Fonts: Fraunces (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-<link rel="icon" type="image/svg+xml" href="assets/icons/logo-mark.svg">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<div class="grain-overlay" aria-hidden="true"></div>
-<div class="cursor-glow" aria-hidden="true"></div>
+<body id="smooth-wrapper">
 
-<a class="skip-link" href="#contenu-principal">Aller au contenu</a>
+  <!-- ================== HEADER ================== -->
+  <header style="--border-width:0;">
+    <div class="header-inner">
 
-<!-- =================== NAVBAR =================== -->
-<header class="navbar" id="navbar">
-  <div class="container navbar__inner">
-    <a href="#accueil" class="navbar__logo" aria-label="CINDER — Accueil">
-      <img src="assets/icons/logo-mark.svg" alt="" class="navbar__logo-mark" width="36" height="36">
-      <span class="navbar__logo-text">CINDER<span class="navbar__logo-sub">Smash Burger Co.</span></span>
-    </a>
-
-    <nav class="navbar__nav" id="navbar-nav" aria-label="Navigation principale">
-      <a href="#menu" class="navbar__link">La Carte</a>
-      <a href="#univers" class="navbar__link">L'Univers</a>
-      <a href="#qualite" class="navbar__link">La Qualité</a>
-      <a href="#contact" class="navbar__link">Contact</a>
-    </nav>
-
-    <div class="navbar__actions">
-      <a href="#commander" class="btn btn--primary btn--sm">
-        <span>Commander</span>
+      <!-- Logo -->
+      <a href="#accueil" class="logo">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M10 20h22v9a11 11 0 0 1-11 11h0A11 11 0 0 1 10 29v-9Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+          <path d="M32 22h3.5a4.5 4.5 0 0 1 0 9H32" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M16 15c0-2 2-2.5 2-4.5S16 7 16 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M23 15c0-2 2-2.5 2-4.5S23 7 23 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span class="logo-en">Kimbo</span>
       </a>
-      <button class="navbar__burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navbar-nav">
-        <span></span><span></span><span></span>
-      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Expérience</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#localisation">Localisation</a>
+      </nav>
+
+      <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener" class="nav-cta">Commander</a>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger" onclick="toggleMobileNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-  </div>
-</header>
 
-<main id="contenu-principal">
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="#accueil">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#experience">Expérience</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#localisation">Localisation</a>
+      <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener" class="mobile-cta">Commander sur Glovo</a>
+    </div>
+  </header>
 
-  <!-- =================== HERO =================== -->
-  <section class="hero" id="accueil">
-    <div class="hero__bg" aria-hidden="true">
-      <div class="hero__ember hero__ember--1"></div>
-      <div class="hero__ember hero__ember--2"></div>
-      <div class="hero__ember hero__ember--3"></div>
-      <div class="hero__ember hero__ember--4"></div>
-      <div class="hero__glow"></div>
+  <!-- ================== MAIN CONTENT ================== -->
+  <main id="smooth-content">
+
+    <!-- Hero Visual Overlay Wrapper (the element the whole page choreographs around) -->
+    <div class="hero-visual-wrapper">
+      <figure class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1400&q=80"
+          alt="Composition de café, crêpes et fruits frais chez Kimbo"
+          class="hero-visual-img" />
+      </figure>
     </div>
 
-    <div class="container hero__inner">
-      <div class="hero__content" data-reveal>
-        <p class="kicker"><span class="kicker__dot"></span>Smash Burger Co. — Fondée en 2021</p>
-        <h1 class="hero__title">
-          LE SMASH BURGER<br>
-          N'A JAMAIS ÉTÉ<br>
-          <span class="text-accent">AUSSI BRUTAL.</span>
+    <!-- Hero Section -->
+    <section class="hero vintage-hero" id="accueil">
+      <div class="hero-content">
+        <!-- Decorative Badge -->
+        <span class="hero-badge-slot">
+          <span class="hero-badge">Arribat Center · Rabat</span>
+        </span>
+
+        <!-- Main Heading -->
+        <h1>
+          <span class="line">Kimbo</span>
         </h1>
-        <p class="hero__slogan">Écrasé. Grillé. Inoubliable.</p>
-        <p class="hero__text">
-          Chez CINDER, chaque steak est écrasé à la commande sur une plancha
-          brûlante à 280°C. Croûte caramélisée, pain briché toasté au beurre,
-          sauces maison. Pas de triche, pas de compromis — juste du goût à l'état brut.
+
+        <!-- Sub-line -->
+        <p class="hero-tagline">
+          <span class="en">Coffee. Food. Good moments.</span>
+          <span class="sep">&#183;</span>
+          <span>Un moment à soi, à Rabat</span>
         </p>
-        <div class="hero__actions">
-          <a href="#commander" class="btn btn--primary btn--lg">
-            <span>Commander maintenant</span>
-            <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#menu" class="btn btn--ghost btn--lg">
-            <span>Découvrir la carte</span>
-          </a>
-        </div>
 
-        <ul class="hero__badges">
-          <li><span class="hero__badges-num">280°C</span>Plancha rugissante</li>
-          <li><span class="hero__badges-num">100%</span>Smashé à la commande</li>
-          <li><span class="hero__badges-num">15 min</span>Chrono cuisine</li>
-        </ul>
-      </div>
-
-      <div class="hero__visual" data-reveal data-reveal-delay="150">
-        <div class="hero__visual-ring"></div>
-        <img src="assets/images/hero-burger.jpg" alt="Burger signature CINDER, double smash bien fondant" class="hero__visual-img" width="1024" height="1024">
-        <div class="hero__tag hero__tag--top">SIGNATURE</div>
-        <div class="hero__tag hero__tag--bottom">9,90&nbsp;€</div>
-      </div>
-    </div>
-
-    <a href="#menu" class="hero__scroll" aria-label="Défiler vers la carte">
-      <span>Scroll</span>
-      <span class="hero__scroll-line"></span>
-    </a>
-  </section>
-
-  <!-- =================== MARQUEE =================== -->
-  <div class="marquee">
-    <div class="marquee__track">
-      <span>SMASHÉ MINUTE</span><span class="marquee__sep">✷</span>
-      <span>PAIN BRIOCHÉ MAISON</span><span class="marquee__sep">✷</span>
-      <span>PLANCHA 280°C</span><span class="marquee__sep">✷</span>
-      <span>SAUCES SECRÈTES</span><span class="marquee__sep">✷</span>
-      <span>SANS CHICHI</span><span class="marquee__sep">✷</span>
-      <span>SMASHÉ MINUTE</span><span class="marquee__sep">✷</span>
-      <span>PAIN BRIOCHÉ MAISON</span><span class="marquee__sep">✷</span>
-      <span>PLANCHA 280°C</span><span class="marquee__sep">✷</span>
-      <span>SAUCES SECRÈTES</span><span class="marquee__sep">✷</span>
-      <span>SANS CHICHI</span><span class="marquee__sep">✷</span>
-    </div>
-  </div>
-
-  <!-- =================== MENU =================== -->
-  <section class="menu-section" id="menu">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <p class="kicker kicker--center"><span class="kicker__dot"></span>La Carte</p>
-        <h2 class="section-title">Ce qu'on sait faire</h2>
-        <p class="section-lead">Quatre familles de produits, une seule obsession : le goût brut, sans détour.</p>
-      </div>
-
-      <div class="menu-tabs" role="tablist" aria-label="Catégories de la carte" data-reveal>
-        <button class="menu-tabs__btn is-active" role="tab" aria-selected="true" data-filter="burgers">Burgers</button>
-        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="sides">Sides</button>
-        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="desserts">Cookies &amp; Desserts</button>
-        <button class="menu-tabs__btn" role="tab" aria-selected="false" data-filter="extras">Extras</button>
-      </div>
-
-      <div class="menu-grid" id="menuGrid">
-
-        <!-- BURGERS -->
-        <article class="menu-card" data-category="burgers" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/menu-burger-classic.jpg" alt="Le Classique, steak smashé et cheddar fondu" loading="lazy" width="1024" height="1024">
-            <span class="menu-card__flag">Signature</span>
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Le Classique</h3>
-              <span class="menu-card__price">9,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Steak smashé, cheddar affiné, oignons caramélisés, sauce Cinder, pickles maison.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="burgers" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/menu-burger-cheese.jpg" alt="Cheese Smash, double cheddar coulant" loading="lazy" width="1200" height="1200">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Cheese Smash</h3>
-              <span class="menu-card__price">11,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Double cheddar fondu, double steak smashé, sauce moutarde &amp; miel.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="burgers" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/menu-burger-bacon.jpg" alt="Bacon Inferno, bacon fumé et cheddar fondu" loading="lazy" width="1200" height="1200">
-            <span class="menu-card__flag menu-card__flag--best">Best-seller</span>
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Bacon Inferno</h3>
-              <span class="menu-card__price">12,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Bacon fumé croustillant, cheddar, oignons frits, sauce BBQ fumée.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="burgers" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/menu-burger-double.jpg" alt="Double Cinder, deux steaks smashés et triple cheddar" loading="lazy" width="1200" height="1200">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Double Cinder</h3>
-              <span class="menu-card__price">13,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Deux steaks smashés, triple cheddar, sauce secrète, pickles, oignons rouges.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="burgers" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/menu-burger-spicy.jpg" alt="Ghost Pepper, jalapeños et sauce piment fantôme" loading="lazy" width="1200" height="1200">
-            <span class="menu-card__flag menu-card__flag--spicy">Piquant</span>
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Ghost Pepper</h3>
-              <span class="menu-card__price">12,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Steak smashé, jalapeños, cheddar, sauce piment fantôme, coriandre.</p>
-          </div>
-        </article>
-
-        <!-- SIDES -->
-        <article class="menu-card" data-category="sides" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-side-fries.svg" alt="Frites maison (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Frites Maison</h3>
-              <span class="menu-card__price">4,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Coupe fraîche, double cuisson, sel de Guérande.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="sides" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-side-onion-rings.svg" alt="Onion rings (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Onion Rings</h3>
-              <span class="menu-card__price">5,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Panure croustillante, cœur fondant, sauce chipotle.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="sides" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-side-cheese-fries.svg" alt="Cheese fries (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Cheese Fries</h3>
-              <span class="menu-card__price">6,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Frites maison, cheddar fondu, bacon émietté.</p>
-          </div>
-        </article>
-
-        <!-- DESSERTS -->
-        <article class="menu-card" data-category="desserts" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-dessert-cookie.svg" alt="Cookie fondant (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Cookie Fondant</h3>
-              <span class="menu-card__price">3,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Chocolat noir, cœur coulant, fleur de sel.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-dessert-brownie.svg" alt="Brownie brûlot (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Brownie Brûlot</h3>
-              <span class="menu-card__price">4,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Noix de pécan torréfiées, caramel au beurre salé.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="desserts" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-dessert-milkshake.svg" alt="Milkshake Cinder (placeholder à remplacer)" loading="lazy" width="600" height="600">
-            <span class="menu-card__flag">Nouveau</span>
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Milkshake Cinder</h3>
-              <span class="menu-card__price">6,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Vanille bourbon, chantilly maison, éclats de cookie.</p>
-          </div>
-        </article>
-
-        <!-- EXTRAS -->
-        <article class="menu-card" data-category="extras" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-extra-sauce.svg" alt="Sauce Cinder (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Sauce Cinder (pot)</h3>
-              <span class="menu-card__price">1,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Notre recette signature, fumée et légèrement épicée.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="extras" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-extra-drink.svg" alt="Boisson artisanale (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Boisson Artisanale</h3>
-              <span class="menu-card__price">3,50&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Sodas et limonades artisanales, sélection du moment.</p>
-          </div>
-        </article>
-
-        <article class="menu-card" data-category="extras" data-reveal>
-          <div class="menu-card__media">
-            <img src="assets/images/placeholders/menu-extra-topping.svg" alt="Supplément topping (placeholder à remplacer)" loading="lazy" width="600" height="600">
-          </div>
-          <div class="menu-card__body">
-            <div class="menu-card__row">
-              <h3 class="menu-card__title">Supplément Topping</h3>
-              <span class="menu-card__price">1,90&nbsp;€</span>
-            </div>
-            <p class="menu-card__desc">Bacon, œuf, cheddar ou oignons frits en plus.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =================== UNIVERS =================== -->
-  <section class="story" id="univers">
-    <div class="container story__inner">
-      <div class="story__visual" data-reveal>
-        <img src="assets/images/placeholders/story-kitchen.svg" alt="Cuisine ouverte CINDER (placeholder à remplacer)" class="story__img story__img--back" loading="lazy" width="800" height="1000">
-        <img src="assets/images/placeholders/story-plancha.svg" alt="Plancha en action (placeholder à remplacer)" class="story__img story__img--front" loading="lazy" width="800" height="1000">
-        <div class="story__stat">
-          <span class="story__stat-num">280°C</span>
-          <span class="story__stat-label">Température de la plancha</span>
+        <div class="hero-actions">
+          <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener" class="cta-box">Commander sur Glovo</a>
+          <a href="#localisation" class="cta-ghost">Nous trouver</a>
         </div>
       </div>
 
-      <div class="story__content" data-reveal data-reveal-delay="150">
-        <p class="kicker"><span class="kicker__dot"></span>L'Univers Cinder</p>
-        <h2 class="section-title">Né dans les braises<br>d'une obsession.</h2>
-        <p class="story__text">
-          Tout commence en 2021, dans un local de dix mètres carrés, avec une
-          plancha, un rêve un peu fou et une conviction : le smash burger
-          mérite mieux que la vitesse. Il mérite de l'obsession.
+      <!-- Scroll cue -->
+      <div class="scroll-cue"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- Section 1 — KIMBO -->
+    <section class="section-intro" id="kimbo">
+      <div class="intro-grid">
+
+        <!-- Left Side: Headings and Description -->
+        <div class="intro-left">
+          <p class="small-title">L'esprit Kimbo</p>
+          <h2 class="main-heading">Un lieu pour ralentir</h2>
+          <p class="description">
+            Kimbo, c'est un café &amp; restaurant pensé pour prendre le temps :
+            un café en passant, un déjeuner entre collègues, une pause goûter
+            ou un moment à partager en fin de journée. Un cadre chaleureux à
+            l'Arribat Center, à Rabat.
+          </p>
+
+          <!-- Key Moments -->
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-value">Café</span>
+              <span class="stat-label">Le matin</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Déjeuner</span>
+              <span class="stat-label">Le midi</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Goûter</span>
+              <span class="stat-label">L'après-midi</span>
+            </div>
+          </div>
+
+          <a href="#menu" class="cta-box">Découvrir le menu</a>
+        </div>
+
+        <!-- Right Side: Moments List -->
+        <div class="intro-right">
+          <div class="ingredients-log">
+            <h3 class="ingredients-title">À vivre chez Kimbo</h3>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">01</div>
+              <div class="ingredient-text">
+                <strong>Boire un café</strong>
+                <p>S'installer et prendre une pause, seul ou accompagné.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">02</div>
+              <div class="ingredient-text">
+                <strong>Déjeuner</strong>
+                <p>Un moment convivial au cœur de l'Arribat Center.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">03</div>
+              <div class="ingredient-text">
+                <strong>Goûter</strong>
+                <p>Crêpes, gaufres et douceurs pour l'après-midi.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">04</div>
+              <div class="ingredient-text">
+                <strong>Partager</strong>
+                <p>Un lieu fait pour se retrouver, à toute heure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Band -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Café &amp; Restaurant</span><i>&#10022;</i>
+        <span>Arribat Center · Rabat</span><i>&#10022;</i>
+        <span>Coffee. Food. Good moments.</span><i>&#10022;</i>
+        <span>Livraison via Glovo</span><i>&#10022;</i>
+        <span>Café &amp; Restaurant</span><i>&#10022;</i>
+        <span>Arribat Center · Rabat</span><i>&#10022;</i>
+        <span>Coffee. Food. Good moments.</span><i>&#10022;</i>
+        <span>Livraison via Glovo</span><i>&#10022;</i>
+      </div>
+    </div>
+
+    <!-- Section 2 — Nos incontournables -->
+    <section class="section-showcase" id="incontournables">
+      <p class="small-title showcase-title">À la carte</p>
+      <h2 class="showcase-heading">Nos incontournables</h2>
+
+      <div class="showcase-grid">
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=800&q=80" alt="Crêpes gourmandes" loading="lazy">
+          </div>
+          <h3>Crêpes</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80" alt="Gaufres garnies" loading="lazy">
+          </div>
+          <h3>Gaufres</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Café" loading="lazy">
+          </div>
+          <h3>Cafés</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=800&q=80" alt="Milkshake gourmand" loading="lazy">
+          </div>
+          <h3>Milkshakes</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=800&q=80" alt="Jus frais" loading="lazy">
+          </div>
+          <h3>Jus &amp; Boissons</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=800&q=80" alt="Sandwich gourmand" loading="lazy">
+          </div>
+          <h3>Sandwichs</h3>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-media">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Dessert" loading="lazy">
+          </div>
+          <h3>Desserts</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 3 — Menu -->
+    <section class="section-menu" id="menu">
+      <p class="small-title menu-small-title">La carte</p>
+      <h2 class="showcase-heading menu-heading">Menu</h2>
+      <p class="menu-note">
+        La carte détaillée de Kimbo sera bientôt mise en ligne ici. En
+        attendant, elle est disponible sur place et via
+        <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener">Glovo</a>.
+      </p>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" data-target="menu-crepes">Crêpes</button>
+        <button class="menu-tab" data-target="menu-gaufres">Gaufres</button>
+        <button class="menu-tab" data-target="menu-sandwichs">Sandwichs</button>
+        <button class="menu-tab" data-target="menu-boissons">Boissons</button>
+        <button class="menu-tab" data-target="menu-desserts">Desserts</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel active" id="menu-crepes">
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+        </div>
+        <div class="menu-panel" id="menu-gaufres">
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+        </div>
+        <div class="menu-panel" id="menu-sandwichs">
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+        </div>
+        <div class="menu-panel" id="menu-boissons">
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+        </div>
+        <div class="menu-panel" id="menu-desserts">
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+          <div class="menu-placeholder-row"><span>Nom du produit</span><span>—</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Expérience -->
+    <section class="section-experience" id="experience">
+      <div class="experience-visual">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80" alt="Intérieur chaleureux de Kimbo" class="experience-img" />
+      </div>
+
+      <div class="experience-copy">
+        <p class="experience-line small-title">L'expérience</p>
+        <h2 class="experience-line experience-heading">Un cadre pensé pour vous</h2>
+        <p class="experience-line experience-text">
+          Une lumière douce, des matières chaleureuses, une ambiance qui invite
+          à rester. Kimbo est conçu comme un cocon au cœur de l'Arribat Center.
         </p>
-        <p class="story__text">
-          Chez CINDER, on écrase le steak à la main, au moment de la
-          commande, pour saisir chaque fibre et caraméliser chaque bord. Le
-          pain est toasté au beurre jusqu'à la croûte dorée. Les sauces sont
-          préparées chaque matin, sans recette copiée. C'est une philosophie
-          de street food premium : rapide, brut, mais jamais bâclé.
+        <p class="experience-line experience-text">
+          Que ce soit pour un café rapide ou un déjeuner prolongé, chaque
+          instant est pensé pour être agréable.
         </p>
-        <div class="story__stats">
-          <div class="story__stat-card">
-            <span class="story__stat-card-num">2021</span>
-            <span class="story__stat-card-label">Première plancha allumée</span>
-          </div>
-          <div class="story__stat-card">
-            <span class="story__stat-card-num">40k+</span>
-            <span class="story__stat-card-label">Burgers smashés chaque année</span>
-          </div>
-          <div class="story__stat-card">
-            <span class="story__stat-card-num">4.9/5</span>
-            <span class="story__stat-card-label">Note moyenne clients</span>
-          </div>
-        </div>
+        <p class="experience-line experience-text">
+          Un service attentif, une carte gourmande, et l'envie de vous voir
+          revenir.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =================== QUALITÉ =================== -->
-  <section class="quality" id="qualite">
-    <div class="container">
-      <div class="section-head" data-reveal>
-        <p class="kicker kicker--center"><span class="kicker__dot"></span>La Différence</p>
-        <h2 class="section-title">On ne triche jamais<br>sur le goût.</h2>
+    <!-- Section 5 — Galerie -->
+    <section class="section-gallery" id="galerie">
+      <p class="small-title showcase-title">En images</p>
+      <h2 class="showcase-heading">Galerie</h2>
+
+      <div class="gallery-grid">
+        <div class="gallery-item g-1"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Café chez Kimbo" loading="lazy"></div>
+        <div class="gallery-item g-2"><img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=900&q=80" alt="Gaufre garnie" loading="lazy"></div>
+        <div class="gallery-item g-3"><img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=900&q=80" alt="Milkshake" loading="lazy"></div>
+        <div class="gallery-item g-4"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=80" alt="Ambiance du café" loading="lazy"></div>
+        <div class="gallery-item g-5"><img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=900&q=80" alt="Sandwich gourmand" loading="lazy"></div>
+        <div class="gallery-item g-6"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Dessert" loading="lazy"></div>
+        <div class="gallery-item g-7"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Intérieur de Kimbo" loading="lazy"></div>
+        <div class="gallery-item g-8"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="Composition gourmande" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- Section 6 — Localisation -->
+    <section class="section-location" id="localisation">
+      <div class="location-inner">
+        <p class="small-title">Nous trouver</p>
+        <h2 class="location-heading">Kimbo</h2>
+        <p class="location-line">Arribat Center — Rabat</p>
+        <p class="location-line">2534+99M, Av. Inaouin, Rabat</p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=KIMBO%20Arribat%20Center%20Rabat%2C%202534%2B99M%20Av.%20Inaouin%2C%20Rabat"
+          target="_blank" rel="noopener" class="cta-box">Nous trouver</a>
+      </div>
+    </section>
+
+    <!-- Section 7 — Commander -->
+    <section class="outro" id="commander">
+      <div class="outro-inner">
+        <p class="small-title">Envie de grignoter</p>
+        <h2 class="outro-heading">Une petite faim ?</h2>
+        <p class="description">
+          Commandez vos crêpes, gaufres, cafés et plus encore, livrés directement chez vous.
+        </p>
+        <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener" class="cta-box">Commander sur Glovo</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================== FOOTER ================== -->
+  <footer>
+    <div class="footer-inner">
+      <!-- Logo -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-en">Kimbo</span>
+        </div>
+        <p class="footer-note">
+          Café &amp; Restaurant.<br />
+          Arribat Center, Rabat.
+        </p>
       </div>
 
-      <div class="quality-grid">
-        <div class="quality-card" data-reveal>
-          <div class="quality-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12.5 2.5c-4.6 3.4-7.5 7.5-7.5 12A7 7 0 0012 21.5a7 7 0 007-7c0-2.6-1.3-4.5-2.5-6 .1 1.7-.5 3-1.5 3.6-.4-3-1.6-6.6-2.5-9.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="quality-card__title">Smashé minute</h3>
-          <p class="quality-card__desc">Chaque steak est écrasé à la commande sur plancha brûlante pour une croûte caramélisée irrésistible.</p>
-        </div>
-
-        <div class="quality-card" data-reveal data-reveal-delay="80">
-          <div class="quality-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12c0-4 4-8 9-8s9 4 9 8-4 8-9 8-9-4-9-8z" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 4v16" stroke="currentColor" stroke-width="1.4" opacity="0.5"/></svg>
-          </div>
-          <h3 class="quality-card__title">Pain briché maison</h3>
-          <p class="quality-card__desc">Toasté au beurre jusqu'à la croûte dorée, moelleux à l'intérieur, il tient tête au smash le plus généreux.</p>
-        </div>
-
-        <div class="quality-card" data-reveal data-reveal-delay="160">
-          <div class="quality-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="13" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M9 15a3 3 0 006 0" stroke="currentColor" stroke-width="1.6"/><path d="M12 15v6" stroke="currentColor" stroke-width="1.6"/></svg>
-          </div>
-          <h3 class="quality-card__title">Plancha à 280°C</h3>
-          <p class="quality-card__desc">Une chaleur extrême pour saisir la viande en quelques secondes et sceller tous les jus à l'intérieur.</p>
-        </div>
-
-        <div class="quality-card" data-reveal data-reveal-delay="240">
-          <div class="quality-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 class="quality-card__title">Sauces signature</h3>
-          <p class="quality-card__desc">Préparées chaque matin en cuisine, sans recette copiée — c'est ce qui rend chaque bouchée reconnaissable.</p>
-        </div>
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <span class="footer-heading">Kimbo</span>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Expérience</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#localisation">Localisation</a>
       </div>
-    </div>
-  </section>
 
-  <!-- =================== CTA =================== -->
-  <section class="cta" id="commander">
-    <div class="cta__bg" aria-hidden="true"></div>
-    <div class="container cta__inner" data-reveal>
-      <h2 class="cta__title">UNE FAIM<br><span class="text-accent">DE BRAISES&nbsp;?</span></h2>
-      <p class="cta__text">Commande en ligne et récupère ton smash brûlant en 15 minutes chrono.</p>
-      <button class="btn btn--primary btn--xl" id="orderBtn" type="button">
-        <span>Commander maintenant</span>
-        <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <p class="cta__note">Démo — aucune commande réelle n'est envoyée sur ce site.</p>
-    </div>
-  </section>
-
-</main>
-
-<!-- =================== FOOTER =================== -->
-<footer class="footer" id="contact">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a href="#accueil" class="navbar__logo">
-        <img src="assets/icons/logo-mark.svg" alt="" class="navbar__logo-mark" width="36" height="36">
-        <span class="navbar__logo-text">CINDER<span class="navbar__logo-sub">Smash Burger Co.</span></span>
-      </a>
-      <p class="footer__tagline">Écrasé. Grillé. Inoubliable.<br>Le smash burger premium, sans chichi.</p>
-      <div class="footer__socials">
-        <a href="#" class="footer__social" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
-        </a>
-        <a href="#" class="footer__social" aria-label="TikTok">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 3v11.5a3.5 3.5 0 11-3-3.46" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 3c.4 2.4 2.1 4.2 4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </a>
-        <a href="#" class="footer__social" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 8.5h2.5V5H14c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6H14v-6h2.3l.7-3h-3V9c0-.3.2-.5.5-.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-        </a>
+      <!-- Contact -->
+      <div class="footer-contact">
+        <span class="footer-heading">Contact</span>
+        <a href="tel:+212537772677">05 37 77 26 77</a>
+        <a href="https://glovoapp.com/ma/fr/rabat/kimbo-rbt" target="_blank" rel="noopener">Commander sur Glovo</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=KIMBO%20Arribat%20Center%20Rabat%2C%202534%2B99M%20Av.%20Inaouin%2C%20Rabat" target="_blank" rel="noopener">2534+99M, Av. Inaouin, Rabat</a>
       </div>
     </div>
 
-    <div class="footer__col">
-      <h4 class="footer__heading">Navigation</h4>
-      <a href="#menu">La Carte</a>
-      <a href="#univers">L'Univers</a>
-      <a href="#qualite">La Qualité</a>
-      <a href="#commander">Commander</a>
+    <div class="footer-bottom">
+      <p>&copy; Kimbo — Café &amp; Restaurant, Rabat.</p>
+      <p class="disclaimer">
+        Site vitrine — projet de refonte. Images de démonstration en attendant les visuels officiels de Kimbo.
+      </p>
     </div>
+  </footer>
 
-    <div class="footer__col">
-      <h4 class="footer__heading">Nous trouver</h4>
-      <p>12 rue des Braises<br>75011 Paris</p>
-      <p>Tous les jours, 11h30 – 22h30</p>
-      <a href="tel:+33612345678">06 12 34 56 78</a>
-      <a href="#">contact@cinder-burger.fr</a>
-    </div>
+  <!-- ================== JAVASCRIPT ================== -->
 
-    <div class="footer__col footer__col--newsletter">
-      <h4 class="footer__heading">La newsletter qui pique</h4>
-      <p>Nouveautés, offres et éditions limitées, une fois par mois.</p>
-      <form class="footer__form" id="newsletterForm">
-        <label class="visually-hidden" for="newsletterEmail">Adresse e-mail</label>
-        <input type="email" id="newsletterEmail" placeholder="ton@email.fr" required>
-        <button type="submit" aria-label="S'inscrire">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </form>
-      <p class="footer__form-note" id="newsletterNote" role="status"></p>
-    </div>
-  </div>
+  <!-- GSAP Core Library -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-  <div class="footer__bottom">
-    <div class="container footer__bottom-inner">
-      <p>© 2026 CINDER Smash Burger Co. — Marque fictive créée à des fins de démonstration.</p>
-      <div class="footer__legal">
-        <a href="#">Mentions légales</a>
-        <a href="#">CGV</a>
-        <a href="#">Confidentialité</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  <!-- GSAP ScrollTrigger Plugin -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
-<a
-  href="https://wa.me/33612345678?text=Bonjour%20CINDER%2C%20je%20voudrais%20passer%20une%20commande%20%F0%9F%94%A5"
-  class="whatsapp-fab"
-  target="_blank"
-  rel="noopener"
-  aria-label="Écrire à CINDER sur WhatsApp"
->
-  <span class="whatsapp-fab__ring" aria-hidden="true"></span>
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <path d="M12 2.5a9.4 9.4 0 00-8.06 14.24L2.5 21.5l4.9-1.4A9.4 9.4 0 1012 2.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-    <path d="M8.3 8.1c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.65 1.7.7 1.8.05.15.1.3 0 .5-.1.2-.15.3-.3.45-.15.15-.3.35-.45.45-.15.15-.3.3-.15.6.15.3.7 1.2 1.5 1.9 1.05.95 1.9 1.25 2.2 1.4.3.15.5.1.65-.05.2-.2.75-.85.95-1.15.2-.3.4-.25.65-.15.25.1 1.65.8 1.9.95.25.15.45.2.5.35.05.15.05.85-.2 1.65-.25.8-1.45 1.5-2 1.55-.55.05-1 .25-3.35-.75-2.85-1.2-4.6-4.05-4.75-4.25-.15-.2-1.15-1.55-1.15-2.95 0-1.4.7-2.05.95-2.35z" fill="currentColor"/>
-  </svg>
-</a>
+  <!-- Custom Main Script -->
+  <script src="js/main.js"></script>
 
-<script src="js/main.js"></script>
 </body>
+
 </html>
